@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="MainVerticlePostgreSQL" type="JetRunConfigurationType">
+    <envs>
+      <env name="SERVER_PORT" value="8888" />
+      <env name="DB_HOST" value="localhost" />
+      <env name="DB_PORT" value="5432" />
+      <env name="DB_DATABASE" value="vertx-stock-broker" />
+      <env name="DB_USER" value="postgres" />
+      <env name="DB_PASSWORD" value="secret" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="com.learning.vertx_web_tutorial.broker.MainVerticleKt" />
+    <module name="vertx-web-tutorial.main" />
+    <shortenClasspath name="NONE" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

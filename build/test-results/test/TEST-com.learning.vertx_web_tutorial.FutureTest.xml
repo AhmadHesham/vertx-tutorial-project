@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.learning.vertx_web_tutorial.FutureTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-09-20T22:18:45" hostname="Ahmads-MacBook-Pro.local" time="0.303">
+  <properties/>
+  <testcase name="test_promise(Vertx, VertxTestContext)" classname="com.learning.vertx_web_tutorial.FutureTest" time="0.303"/>
+  <system-out><![CDATA[Result: Hello There
+something: Hello There
+Hehe: Hello There
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
