@@ -26,7 +26,9 @@ class FlywayMigration {
     }
 
     private fun execute(dbConfig: DBConfig) {
-      val jdbcUrl = "jdbc:postgresql://${dbConfig.host}:${dbConfig.port}/${dbConfig.database}"
+//      val database = "postgresql"
+      val database = "mysql"
+      val jdbcUrl = "jdbc:$database://${dbConfig.host}:${dbConfig.port}/${dbConfig.database}"
       LOGGER.debug("Migrating Schema using JDBC url: $jdbcUrl")
 
       val flyway = Flyway
@@ -42,6 +44,7 @@ class FlywayMigration {
       val pendingMigration = flyway.info().pending()
       LOGGER.info("Pending migrations: ${format(pendingMigration)}")
 
+      flyway.clean()
       flyway.migrate()
     }
 
